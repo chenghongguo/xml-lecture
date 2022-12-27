@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE bookList
+        [
+                <!ELEMENT bookList (book_name, book_price)*>
+                <!ELEMENT book_name (#PCDATA)>
+                <!ELEMENT book_price (#PCDATA)>
+        ]
+]>
+<bookList>
+<book_name>Java</book_name>
+<book_price>12</book_price>
+</bookList>

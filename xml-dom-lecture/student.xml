@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><?hongguo href=http://www.crazyit.org?><!--根元素之前的注释--><student 学号="1993333910">
+    <name>张三</name>
+    <age>28</age>
+    <high>183</high>
+    <score>
+        <Java>96</Java>
+        <Spring>90</Spring>
+        <Mybatis>80</Mybatis>
+    </score>
+</student>
