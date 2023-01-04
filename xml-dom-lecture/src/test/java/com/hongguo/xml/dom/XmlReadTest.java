@@ -38,6 +38,7 @@ public class XmlReadTest {
             final String W3C_XML_SCHEMA = "http://www.w3.org/2001/XMLSchema";
             factory.setAttribute(JAXP_SCHEMA_LANGUAGE, W3C_XML_SCHEMA);
         }
+//        System.out.println(factory.isNamespaceAware());
 
         builder = factory.newDocumentBuilder();
         builder.setErrorHandler(new ErrorHandler() {
@@ -68,6 +69,8 @@ public class XmlReadTest {
         //InputStream resource = XmlReadTest.class.getResourceAsStream("config-xsd.xml");
         Document document = builder.parse("config-xsd.xml");
         Element root = document.getDocumentElement();
+
+        System.out.println(root.getLocalName() + ", " + root.getNamespaceURI());
 
         Map<String, Object> map = parseConfig(root);
         System.out.println(map);
