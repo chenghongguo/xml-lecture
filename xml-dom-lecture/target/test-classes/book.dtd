@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!ELEMENT compute_book ((book_name, book_price))>
-<!ELEMENT book_price (#PCDATA)>
